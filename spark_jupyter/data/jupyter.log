@@ -1,0 +1,98 @@
+[I 06:48:26.836 LabApp] Writing notebook server cookie secret to /home/jovyan/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 06:48:27.829 LabApp] JupyterLab extension loaded from /opt/conda/lib/python3.7/site-packages/jupyterlab
+[I 06:48:27.829 LabApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
+[W 06:48:27.830 LabApp] JupyterLab server extension not enabled, manually loading...
+[I 06:48:27.836 LabApp] JupyterLab extension loaded from /opt/conda/lib/python3.7/site-packages/jupyterlab
+[I 06:48:27.836 LabApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
+[I 06:48:27.836 LabApp] Serving notebooks from local directory: /home/jovyan
+[I 06:48:27.836 LabApp] The Jupyter Notebook is running at:
+[I 06:48:27.836 LabApp] http://(8b48bc738d81 or 127.0.0.1):8888/?token=f6e2d9462865f35253648f2379b6ab82eb67f6d54fab19c5
+[I 06:48:27.836 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 06:48:27.839 LabApp]
+
+    To access the notebook, open this file in a browser:
+        file:///home/jovyan/.local/share/jupyter/runtime/nbserver-6-open.html
+    Or copy and paste one of these URLs:
+        http://(8b48bc738d81 or 127.0.0.1):8888/?token=f6e2d9462865f35253648f2379b6ab82eb67f6d54fab19c5
+^C[I 06:48:45.507 LabApp] interrupted
+Serving notebooks from local directory: /home/jovyan
+0 active kernels
+The Jupyter Notebook is running at:
+http://(8b48bc738d81 or 127.0.0.1):8888/?token=f6e2d9462865f35253648f2379b6ab82eb67f6d54fab19c5
+Shutdown this notebook server (y/[n])? ^C[C 06:48:46.005 LabApp] received signal 2, stopping
+[I 06:48:46.006 LabApp] Shutting down 0 kernels
+^C^C
+[ec2-user@ip-172-31-45-49 spark]$ ^C
+[ec2-user@ip-172-31-45-49 spark]$ ^C
+[ec2-user@ip-172-31-45-49 spark]$ ^C
+[ec2-user@ip-172-31-45-49 spark]$ ^C
+[ec2-user@ip-172-31-45-49 spark]$ ^C
+[ec2-user@ip-172-31-45-49 spark]$ ^C
+[ec2-user@ip-172-31-45-49 spark]$ ^C
+[ec2-user@ip-172-31-45-49 spark]$ vim run_docker_lab.sh
+[ec2-user@ip-172-31-45-49 spark]$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+[ec2-user@ip-172-31-45-49 spark]$ sh run_docker_lab.sh
+[I 06:49:06.801 LabApp] Writing notebook server cookie secret to /home/jovyan/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 06:49:07.791 LabApp] JupyterLab extension loaded from /opt/conda/lib/python3.7/site-packages/jupyterlab
+[I 06:49:07.791 LabApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
+[W 06:49:07.792 LabApp] JupyterLab server extension not enabled, manually loading...
+[I 06:49:07.797 LabApp] JupyterLab extension loaded from /opt/conda/lib/python3.7/site-packages/jupyterlab
+[I 06:49:07.798 LabApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
+[I 06:49:07.798 LabApp] Serving notebooks from local directory: /home/jovyan
+[I 06:49:07.798 LabApp] The Jupyter Notebook is running at:
+[I 06:49:07.798 LabApp] http://(bb18b3db9426 or 127.0.0.1):8888/?token=1ef56f519fad6aebfa73b14f77fe81e33d2c7683b5ad0600
+[I 06:49:07.798 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 06:49:07.802 LabApp]
+
+    To access the notebook, open this file in a browser:
+        file:///home/jovyan/.local/share/jupyter/runtime/nbserver-6-open.html
+    Or copy and paste one of these URLs:
+        http://(bb18b3db9426 or 127.0.0.1):8888/?token=1ef56f519fad6aebfa73b14f77fe81e33d2c7683b5ad0600
+[W 06:49:12.576 LabApp] Clearing invalid/expired login cookie username-52-82-122-206-8888
+[W 06:49:12.577 LabApp] Forbidden
+[W 06:49:12.577 LabApp] 403 GET /api/contents/work/scripts/02_word_count.ipynb?content=0&1559371752497 (112.42.4.160) 1.65ms referer=http://52.82.122.206:8888/lab
+[W 06:49:25.574 LabApp] Forbidden
+[W 06:49:25.574 LabApp] 403 GET /api/contents/work/scripts?content=1&1559371765545 (112.42.4.160) 0.94ms referer=http://52.82.122.206:8888/lab
+[W 06:49:27.548 LabApp] Forbidden
+[W 06:49:27.548 LabApp] 403 GET /api/sessions?1559371767518 (112.42.4.160) 0.95ms referer=http://52.82.122.206:8888/lab
+[W 06:49:27.587 LabApp] Forbidden
+[W 06:49:27.587 LabApp] 403 GET /api/terminals?1559371767519 (112.42.4.160) 0.72ms referer=http://52.82.122.206:8888/lab
+[W 06:49:29.275 LabApp] Forbidden
+[W 06:49:29.275 LabApp] 403 GET /api/contents/work/scripts?content=1&1559371769247 (112.42.4.160) 0.98ms referer=http://52.82.122.206:8888/lab
+[W 06:49:37.545 LabApp] Forbidden
+[W 06:49:37.545 LabApp] 403 GET /api/sessions?1559371777521 (112.42.4.160) 1.08ms referer=http://52.82.122.206:8888/lab
+[W 06:49:37.551 LabApp] Forbidden
+[W 06:49:37.551 LabApp] 403 GET /api/terminals?1559371777522 (112.42.4.160) 0.60ms referer=http://52.82.122.206:8888/lab
+[I 06:49:41.163 LabApp] 302 GET /?token=1ef56f519fad6aebfa73b14f77fe81e33d2c7683b5ad0600 (112.42.4.160) 0.57ms
+[W 06:49:42.717 LabApp] 404 GET /lab/api/workspaces/lab?1559371782606 (112.42.4.160): Workspace 'lab' ('lab-a511') not found
+[W 06:49:42.718 LabApp] Workspace 'lab' ('lab-a511') not found
+[W 06:49:42.718 LabApp] 404 GET /lab/api/workspaces/lab?1559371782606 (112.42.4.160) 1.99ms referer=http://52.82.122.206:8888/lab
+[I 06:49:43.027 LabApp] Node v11.14.0
+
+[I 06:49:43.037 LabApp] Build is up to date
+[I 06:49:46.811 LabApp] Writing notebook-signing key to /home/jovyan/.local/share/jupyter/notebook_secret
+[W 06:49:46.812 LabApp] Notebook work/scripts/02_word_count.ipynb is not trusted
+[I 06:49:47.184 LabApp] Kernel started: 724b3f61-d5f8-4c3d-a137-debc49a57739
+[I 06:49:48.421 LabApp] Adapting to protocol v5.1 for kernel 724b3f61-d5f8-4c3d-a137-debc49a57739
+[I 06:49:48.559 LabApp] Adapting to protocol v5.1 for kernel 724b3f61-d5f8-4c3d-a137-debc49a57739
+19/06/01 06:49:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[I 06:51:47.782 LabApp] Saving file at /work/scripts/02_word_count.ipynb
+[I 07:03:07.127 LabApp] New terminal with automatic name: 1
+TermSocket.open: 1
+TermSocket.open: Opened 1
+[W 07:35:12.299 LabApp] 404 GET http://www.baidu.com/cache/global/img/gs.gif (93.174.93.136) 23.23ms referer=None
+[I 08:12:24.872 LabApp] Creating new notebook in /work/scripts
+[I 08:12:25.186 LabApp] Kernel started: 09ecd5df-4b41-49b2-9ad8-fede9a7061c7
+[I 08:12:26.474 LabApp] Adapting to protocol v5.1 for kernel 09ecd5df-4b41-49b2-9ad8-fede9a7061c7
+[I 08:14:25.174 LabApp] Saving file at /work/scripts/03_rdd_programing.ipynb
+19/06/01 08:14:37 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+19/06/01 08:14:38 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[I 08:16:25.288 LabApp] Saving file at /work/scripts/03_rdd_programing.ipynb
+[I 08:24:26.200 LabApp] Saving file at /work/scripts/03_rdd_programing.ipynb
