@@ -14,3 +14,15 @@ copy the content of id_rsa.pub
 Settings -> SSH and GPG Keys -> New SSH Key
 title: any name which you like
 ssh: paste the key whicn you have copied in step3.
+
+
+!!! Clone repo by SSH
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[ec2-user@ip-172-31-45-49 DataScience]$ git remote -v
+origin	git+ssh://git@github.com/username/reponame.git (fetch)
+origin	git+ssh://git@github.com/username/reponame.git (push)
+[ec2-user@ip-172-31-45-49 DataScience]$ git remote set-url origin git@github.com:airuitian/DataScience.git
