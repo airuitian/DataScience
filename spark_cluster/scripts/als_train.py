@@ -104,3 +104,4 @@ if __name__ == "__main__":
     #rmse = evaluator.evaluate(predictions)
 
     predict_sampe()
+    session.stop()
