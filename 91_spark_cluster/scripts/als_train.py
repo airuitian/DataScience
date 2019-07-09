@@ -4,6 +4,8 @@ spark_home = os.environ.get('SPARK_HOME', None)
 sys.path.insert(0, os.path.join(spark_home, 'python'))
 sys.path.insert(0, os.path.join(spark_home, 'python/lib/py4j-0.10.7-src.zip'))
 
+os.environ["PYSPARK_PYTHON"]="/home/ec2-user/anaconda3/bin/python"
+
 from pyspark.sql import SparkSession
 
 from pyspark.ml.evaluation import RegressionEvaluator
@@ -61,7 +63,7 @@ def evaluate(test_set):
 
     print("Root-mean-square error = " + str(rmse))
 
-def predict_sampe():
+def predict_sample():
     # Generate top 10 movie recommendations for each user
     userRecs = model.recommendForAllUsers(10)
     # Generate top 10 user recommendations for each movie
@@ -103,5 +105,5 @@ if __name__ == "__main__":
     #                                predictionCol="prediction")
     #rmse = evaluator.evaluate(predictions)
 
-    predict_sampe()
+    predict_sample()
     session.stop()
