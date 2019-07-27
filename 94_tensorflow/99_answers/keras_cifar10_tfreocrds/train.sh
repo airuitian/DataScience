@@ -4,4 +4,4 @@ rm -rf ./ckpts
 rm -rf ./logs
 mkdir ./ckpts
 
-nohup python train.py 128 30 > std.out &
+nohup python train.py 128 10 > std.out &
