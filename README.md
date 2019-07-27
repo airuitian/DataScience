@@ -1,5 +1,5 @@
 # DataScience
-This branch containt the scripts and slides of data science course.
+This branch contains the scripts and slides of data science course.
 
 ## Getting Started 
 
