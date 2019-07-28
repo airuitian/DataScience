@@ -40,8 +40,8 @@ def callbacks():
 """
 def main(batch_size, epochs):
     # load train and test data
-    x_train, y_train = loader.load_cifar10_tfrecords(loader.TRAIN_TFRECORD)
-    x_test, y_test = loader.load_cifar10_tfrecords(loader.TEST_TFRECORD)
+    x_train, y_train = ...
+    x_test, y_test = ...
 
     alexnet = models.alexnet()
 

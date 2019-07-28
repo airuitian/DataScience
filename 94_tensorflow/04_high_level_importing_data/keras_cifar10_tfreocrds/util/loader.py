@@ -67,7 +67,7 @@ def _parse_function(string_record):
     width = int(example.features.feature['width'].int64_list.value[0])
     img_string = (example.features.feature['image_raw'].bytes_list.value[0])
     label = int(example.features.feature['label'].int64_list.value[0])
-    
+ 
     img_1d = np.frombuffer(img_string, dtype=np.uint8)
     img = img_1d.reshape((height, width, -1))
 
@@ -100,7 +100,8 @@ def load_cifar10_tfrecords(tfrecord):
 
     x = np.array(x)
     y = np.array(y)
-    y = to_categorical(y, 10)
+    # y needs a post processing..
+    y = 
 
     return x, y
 
