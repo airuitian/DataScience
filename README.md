@@ -1,7 +1,13 @@
 # DataScience
 This branch contains the scripts and slides of data science course.
 
-## Getting Started 
+## Getting Started
+
+Download both scripts and slides
+
+```
+git clone git@github.com:airuitian/DataScience.git
+``` 
 
 Download scripts
 
