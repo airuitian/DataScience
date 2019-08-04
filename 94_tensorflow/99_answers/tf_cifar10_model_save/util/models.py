@@ -18,7 +18,7 @@ class AlexNet_NN:
         Init function
     """
     def __init__(self, batch_size, epochs):
-        self.x = tf.placeholder("float", shape=[None, 32, 32, 3])
+        self.x = tf.placeholder("float", shape=[None, 32, 32, 3], name='input')
         # y_: Ground Truth
         self.y_ = tf.placeholder("float", shape=[None, 10])
         self.keep_prob = tf.placeholder("float")
@@ -71,7 +71,7 @@ class AlexNet_NN:
 
         fc2 = tf.layers.dense(inputs=fc1, units=4096, activation='relu')
 
-        y = tf.layers.dense(inputs=fc2, units=num_classes, activation='softmax')
+        y = tf.layers.dense(inputs=fc2, units=num_classes, activation='softmax', name='output')
 
 
         return y
@@ -103,6 +103,7 @@ class AlexNet_NN:
         step = 1
         try:
             while True:
+                print(step)
                 batch = self.sess.run(next_element, feed_dict={self.features_placeholder: self.x_train,
                     self.labels_placeholder: self.y_train})
                 features = batch[0]
@@ -112,12 +113,11 @@ class AlexNet_NN:
                 train_step.run(feed_dict={self.x: features, self.y_: label, self.keep_prob: 0.5})
 
                 step = step + 1
-                if step % 200 == 0:
+                if step % 50 == 0:
                     print('\nstep %d, training accuracy %f ' % (step, train_accuracy))
                     print('Model Saved')
                     saver.save(self.sess, model_path, global_step=step)                    
-                elif step % 20 == 0:
-                    print('.', end='')
+                print('step: {}'.format(step))
 
         except tf.errors.OutOfRangeError:
             print("End of dataset")
