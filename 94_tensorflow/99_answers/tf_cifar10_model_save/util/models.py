@@ -4,7 +4,6 @@
 import tensorflow as tf
 
 from util import loader
-from util import layers
 
 model_path = './ckpts/alexnet.ckpt'
 num_classes = 10
